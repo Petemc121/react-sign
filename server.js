@@ -7,7 +7,7 @@ const path = require("path");
 
 app.use(cors());
 app.use(express.json()); //req.body
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "build")));
 
 app.post("/members", async (req, res) => {
   try {
